@@ -82,3 +82,14 @@ document.querySelectorAll('.card').forEach((c, i) => {
   c.style.transitionDelay = `${(i % 3) * 70}ms`;
   io.observe(c);
 });
+
+/* ---------- reveal rules blocks ---------- */
+document.querySelectorAll('.rule-block').forEach((el, i) => {
+  el.style.transitionDelay = `${(i % 2) * 80}ms`;
+  io.observe(el);
+});
+
+document.querySelectorAll('.event-rule').forEach((el, i) => {
+  el.style.transitionDelay = `${(i % 3) * 70}ms`;
+  io.observe(el);
+});

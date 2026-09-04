@@ -2396,7 +2396,7 @@
   }
 
   .tab-btn[data-filter="all"]::before { content: 'All acts'; }
-  .tab-btn[data-filter="all"]::after { content: '54 performances'; }
+  .tab-btn[data-filter="all"]::after { content: '30 performances'; }
   .tab-btn[data-filter="round-1"]::before { content: 'Round 1'; }
   .tab-btn[data-filter="round-1"]::after { content: '9:45 – 11:15 AM'; }
   .tab-btn[data-filter="round-2"]::before { content: 'Round 2'; }

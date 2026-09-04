@@ -1,64 +1,81 @@
 // Student Performance Running Order Data
+
 const PERFORMANCES_DATA = [
-  // ROUND 1
-  { no: 1, round: "round-1", roundName: "Round 1", time: "9:45 – 9:49 AM", name: "Divya", type: "Dance", duration: "4 min" },
-  { no: 2, round: "round-1", roundName: "Round 1", time: "9:49 – 9:54 AM", name: "Shreenidhi K.L", type: "Dance", duration: "5 min" },
-  { no: 3, round: "round-1", roundName: "Round 1", time: "9:54 – 9:58 AM", name: "Mahammad Rifad", type: "Dance", duration: "4 min" },
-  { no: 4, round: "round-1", roundName: "Round 1", time: "9:59 – 10:04 AM", name: "Shaziya Mariyam", type: "Dance", duration: "5 min" },
-  { no: 5, round: "round-1", roundName: "Round 1", time: "10:04 – 10:09 AM", name: "Rana Fathima", type: "Dance", duration: "5 min" },
-  { no: 6, round: "round-1", roundName: "Round 1", time: "10:09 – 10:14 AM", name: "Salma Simra", type: "Dance", duration: "5 min" },
-  { no: 7, round: "round-1", roundName: "Round 1", time: "10:15 – 10:20 AM", name: "Ayesha Alfeeza", type: "Dance", duration: "5 min" },
-  { no: 8, round: "round-1", roundName: "Round 1", time: "10:20 – 10:24 AM", name: "Jasmeen Nadaf", type: "Dance", duration: "4 min" },
-  { no: 9, round: "round-1", roundName: "Round 1", time: "10:24 – 10:28 AM", name: "Limitha M", type: "Dance", duration: "4 min" },
-  { no: 10, round: "round-1", roundName: "Round 1", time: "10:29 – 10:34 AM", name: "Fathima Afra", type: "Singing", duration: "5 min" },
-  { no: 11, round: "round-1", roundName: "Round 1", time: "10:34 – 10:39 AM", name: "Muhammed Fahim", type: "Dance", duration: "5 min" },
-  { no: 12, round: "round-1", roundName: "Round 1", time: "10:39 – 10:44 AM", name: "Raksha Kharvi", type: "Dance", duration: "5 min" },
-  { no: 13, round: "round-1", roundName: "Round 1", time: "10:45 – 10:50 AM", name: "Somyo Ranjan", type: "Dance", duration: "5 min" },
-  { no: 14, round: "round-1", roundName: "Round 1", time: "10:50 – 10:55 AM", name: "Kousthubh S Bhat", type: "Dance", duration: "5 min" },
-  { no: 15, round: "round-1", roundName: "Round 1", time: "10:55 – 11:00 AM", name: "Venkatesh HN", type: "Dance", duration: "5 min" },
-  { no: 16, round: "round-1", roundName: "Round 1", time: "11:01 – 11:05 AM", name: "Sharath B K", type: "Dance", duration: "4 min" },
-  { no: 17, round: "round-1", roundName: "Round 1", time: "11:05 – 11:09 AM", name: "M Padmanabha Bhat", type: "Dance", duration: "4 min" },
 
-  // ROUND 2
-  { no: 18, round: "round-2", roundName: "Round 2", time: "11:15 – 11:20 AM", name: "Prem B T", type: "Dance", duration: "5 min" },
-  { no: 19, round: "round-2", roundName: "Round 2", time: "11:20 – 11:25 AM", name: "Kishan", type: "Dance", duration: "5 min" },
-  { no: 20, round: "round-2", roundName: "Round 2", time: "11:25 – 11:30 AM", name: "Akshata Naik", type: "Dance", duration: "5 min" },
-  { no: 21, round: "round-2", roundName: "Round 2", time: "11:31 – 11:36 AM", name: "Mohith P", type: "Dance", duration: "5 min" },
-  { no: 22, round: "round-2", roundName: "Round 2", time: "11:36 – 11:41 AM", name: "Prajwal Shetty", type: "Dance", duration: "5 min" },
-  { no: 23, round: "round-2", roundName: "Round 2", time: "11:41 – 11:46 AM", name: "Vishwas B S", type: "Dance", duration: "5 min" },
-  { no: 24, round: "round-2", roundName: "Round 2", time: "11:47 – 11:52 AM", name: "Manohar M", type: "Dance", duration: "5 min" },
-  { no: 25, round: "round-2", roundName: "Round 2", time: "11:52 – 11:56 AM", name: "Mohammed Gulshan", type: "Singing", duration: "4 min" },
-  { no: 26, round: "round-2", roundName: "Round 2", time: "11:56 AM – 12:01 PM", name: "Shubham Jain", type: "Dance", duration: "5 min" },
-  { no: 27, round: "round-2", roundName: "Round 2", time: "12:02 – 12:07 PM", name: "Sakshi Shettigara", type: "Dance", duration: "5 min" },
-  { no: 28, round: "round-2", roundName: "Round 2", time: "12:07 – 12:12 PM", name: "Sayed Hisham", type: "Dance", duration: "5 min" },
-  { no: 29, round: "round-2", roundName: "Round 2", time: "12:12 – 12:17 PM", name: "Henyashree", type: "Dance", duration: "5 min" },
-  { no: 30, round: "round-2", roundName: "Round 2", time: "12:18 – 12:23 PM", name: "Santhosh S", type: "Dance", duration: "5 min" },
-  { no: 31, round: "round-2", roundName: "Round 2", time: "12:23 – 12:27 PM", name: "Mohammed Reehan", type: "Dance", duration: "4 min" },
-  { no: 32, round: "round-2", roundName: "Round 2", time: "12:27 – 12:32 PM", name: "Amira Shahla", type: "Singing", duration: "5 min" },
-  { no: 33, round: "round-2", roundName: "Round 2", time: "12:33 – 12:37 PM", name: "Mohammed Rihan", type: "Dance", duration: "4 min" },
-  { no: 34, round: "round-2", roundName: "Round 2", time: "12:37 – 12:41 PM", name: "Riya Richard Gowder", type: "Dance", duration: "4 min" },
-  { no: 35, round: "round-2", roundName: "Round 2", time: "12:41 – 12:45 PM", name: "Shreyas Anand", type: "Dance", duration: "4 min" },
-  { no: 36, round: "round-2", roundName: "Round 2", time: "12:46 – 12:50 PM", name: "Rishikesh R Alva", type: "Dance", duration: "4 min" },
-  { no: 37, round: "round-2", roundName: "Round 2", time: "12:50 – 12:54 PM", name: "Muhaz Abbas", type: "Dance", duration: "4 min" },
-  { no: 38, round: "round-2", roundName: "Round 2", time: "12:54 – 12:59 PM", name: "Chinmayi B Muddappalavar", type: "Dance", duration: "5 min" },
+  // =====================================================
+  // ROUND 1 — 1ST YEAR PERFORMANCES
+  // =====================================================
 
-  // ROUND 3
-  { no: 39, round: "round-3", roundName: "Round 3", time: "2:15 – 2:17 PM", name: "Sameeksha", type: "Dance", duration: "2.5 min" },
-  { no: 40, round: "round-3", roundName: "Round 3", time: "2:17 – 2:20 PM", name: "Rakshya Krishnakumar", type: "Dance", duration: "2.5 min" },
-  { no: 41, round: "round-3", roundName: "Round 3", time: "2:20 – 2:24 PM", name: "Aiza Fatima", type: "Singing", duration: "4 min" },
-  { no: 42, round: "round-3", roundName: "Round 3", time: "2:25 – 2:27 PM", name: "Nithin Kumar", type: "Dance", duration: "2.5 min" },
-  { no: 43, round: "round-3", roundName: "Round 3", time: "2:27 – 2:30 PM", name: "Ayisha Reema", type: "Dance", duration: "2.5 min" },
-  { no: 44, round: "round-3", roundName: "Round 3", time: "2:30 – 2:35 PM", name: "Sudharshan", type: "Instrumental / Music", duration: "5 min" },
-  { no: 45, round: "round-3", roundName: "Round 3", time: "2:36 – 2:40 PM", name: "Ahmed Hishad", type: "Dance", duration: "4 min" },
-  { no: 46, round: "round-3", roundName: "Round 3", time: "2:40 – 2:42 PM", name: "Mohammed Raheesh Basheer", type: "Dance", duration: "2.5 min" },
-  { no: 47, round: "round-3", roundName: "Round 3", time: "2:43 – 2:45 PM", name: "Bindu Sagar M", type: "Singing", duration: "2.5 min" },
-  { no: 48, round: "round-3", roundName: "Round 3", time: "2:46 – 2:50 PM", name: "Anusha R Poojari", type: "Dance", duration: "4 min" },
-  { no: 49, round: "round-3", roundName: "Round 3", time: "2:50 – 2:54 PM", name: "Ashmi Vinod", type: "Dance", duration: "4 min" },
-  { no: 50, round: "round-3", roundName: "Round 3", time: "2:54 – 2:58 PM", name: "Aysha Souhan", type: "Dance", duration: "4 min" },
-  { no: 51, round: "round-3", roundName: "Round 3", time: "2:59 – 3:00 PM", name: "Mukund M", type: "Beatbox", duration: "1.5 min" },
-  { no: 52, round: "round-3", roundName: "Round 3", time: "3:00 – 3:04 PM", name: "Ayan Abdul Latheef", type: "Dance", duration: "4 min" },
-  { no: 53, round: "round-3", roundName: "Round 3", time: "3:05 – 3:10 PM", name: "Abdul Razak Rihan", type: "Dance", duration: "5 min" },
-  { no: 54, round: "round-3", roundName: "Round 3", time: "3:10 – 3:15 PM", name: "Gayathri L", type: "Dance", duration: "5 min" }
+  { no: 1, round: "round-1", roundName: "Round 1", time: "9:45 – 9:48 AM", name: "Marwan", type: "Dance", duration: "3 min" },
+
+  { no: 2, round: "round-1", roundName: "Round 1", time: "9:50 – 9:55 AM", name: "Rana Fathima", type: "Dance", duration: "5 min" },
+
+  { no: 3, round: "round-1", roundName: "Round 1", time: "9:57 – 10:02 AM", name: "Jasmeen Nadaf", type: "Dance", duration: "5 min" },
+
+  { no: 4, round: "round-1", roundName: "Round 1", time: "10:04 – 10:09 AM", name: "Limitha M", type: "Dance", duration: "5 min" },
+
+  { no: 5, round: "round-1", roundName: "Round 1", time: "10:11 – 10:16 AM", name: "Muhammed Fahim", type: "Dance", duration: "5 min" },
+
+  { no: 6, round: "round-1", roundName: "Round 1", time: "10:18 – 10:23 AM", name: "Somyo Ranjan", type: "Dance", duration: "5 min" },
+
+  { no: 7, round: "round-1", roundName: "Round 1", time: "10:25 – 10:30 AM", name: "Henyashree", type: "Dance", duration: "5 min" },
+
+  { no: 8, round: "round-1", roundName: "Round 1", time: "10:32 – 10:35 AM", name: "Nithin Kumar", type: "Dance", duration: "3 min" },
+
+  { no: 9, round: "round-1", roundName: "Round 1", time: "10:37 – 10:42 AM", name: "Amira Shahla", type: "Singing", duration: "5 min" },
+
+  { no: 10, round: "round-1", roundName: "Round 1", time: "10:44 – 10:47 AM", name: "Mohammed Raheesh Basheer", type: "Dance", duration: "3 min" },
+
+  { no: 11, round: "round-1", roundName: "Round 1", time: "10:49 – 10:54 AM", name: "Salma Simra", type: "Dance", duration: "5 min" },
+
+  { no: 12, round: "round-1", roundName: "Round 1", time: "10:56 – 11:01 AM", name: "Sudharshan", type: "Instrumental / Music", duration: "5 min" },
+
+  { no: 13, round: "round-1", roundName: "Round 1", time: "11:03 – 11:08 AM", name: "Ashmi Vinod", type: "Dance", duration: "5 min" },
+
+  { no: 14, round: "round-1", roundName: "Round 1", time: "11:10 – 11:15 AM", name: "Riya Richard Gowder", type: "Dance", duration: "5 min" },
+
+  { no: 15, round: "round-1", roundName: "Round 1", time: "11:17 – 11:20 AM", name: "Swamy", type: "Dance", duration: "3 min" },
+
+  { no: 16, round: "round-1", roundName: "Round 1", time: "11:22 – 11:27 AM", name: "Aboobakkar Siddiq", type: "Singing", duration: "5 min" },
+
+  { no: 17, round: "round-1", roundName: "Round 1", time: "11:29 – 11:34 AM", name: "Dayanand Sagar", type: "Singing", duration: "5 min" },
+
+
+  // =====================================================
+  // ROUND 2 — 2ND / 3RD YEAR PERFORMANCES
+  // =====================================================
+
+  { no: 18, round: "round-2", roundName: "Round 2", time: "11:36 – 11:41 AM", name: "Aysha Souhan", type: "Dance", duration: "5 min" },
+
+  { no: 19, round: "round-2", roundName: "Round 2", time: "11:43 – 11:46 AM", name: "Ayisha Reema", type: "Dance", duration: "3 min" },
+
+  { no: 20, round: "round-2", roundName: "Round 2", time: "11:48 – 11:50 AM", name: "Mukund M", type: "Beatbox", duration: "2 min" },
+
+  { no: 21, round: "round-2", roundName: "Round 2", time: "11:52 – 11:57 AM", name: "Mohammed Gulshan", type: "Singing", duration: "5 min" },
+
+  { no: 22, round: "round-2", roundName: "Round 2", time: "11:59 AM – 12:04 PM", name: "Sakshi Shettigara", type: "Dance", duration: "5 min" },
+
+  { no: 23, round: "round-2", roundName: "Round 2", time: "12:06 – 12:11 PM", name: "Mohammed Reehan", type: "Dance", duration: "5 min" },
+
+  { no: 24, round: "round-2", roundName: "Round 2", time: "12:13 – 12:16 PM", name: "BINDU SAGAR M", type: "Singing", duration: "3 min" },
+
+  { no: 25, round: "round-2", roundName: "Round 2", time: "12:18 – 12:23 PM", name: "Gayathri L", type: "Dance", duration: "5 min" },
+
+  { no: 26, round: "round-2", roundName: "Round 2", time: "12:25 – 12:30 PM", name: "Fathimath Roza", type: "Dance", duration: "5 min" },
+
+  { no: 27, round: "round-2", roundName: "Round 2", time: "12:32 – 12:37 PM", name: "Afra Ahmed", type: "Dance", duration: "5 min" },
+
+
+  // =====================================================
+  // ROUND 3 — MENTOR / FACULTY PERFORMANCES
+  // =====================================================
+
+  { no: 28, round: "round-3", roundName: "Round 3", time: "2:15 – 2:20 PM", name: "Yashwin Sir", type: "Mentor Performance", duration: "5 min" },
+
+  { no: 29, round: "round-3", roundName: "Round 3", time: "2:20 – 2:40 PM", name: "Faculty Group", type: "Group Performance by Faculty", duration: "20 min" },
+
+  { no: 30, round: "round-3", roundName: "Round 3", time: "2:40 – 2:45 PM", name: "Faculty Group", type: "Group Performance by Faculty", duration: "5 min" }
+
 ];
 
 function getOrdinal(n) {

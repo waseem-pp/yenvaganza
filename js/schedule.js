@@ -95,6 +95,18 @@ function renderSchedule() {
 }
 
 function createPerformerCardHTML(p) {
+  // return `
+  //   <article class="performer-card" id="performer-${p.no}" data-no="${p.no}">
+  //     <div class="card-head">
+  //       <span class="card-no">#${p.no}</span>
+  //       <span class="card-type-tag">${p.type}</span>
+  //     </div>
+  //     <h3 class="card-name" id="name-heading-${p.no}">${p.name}</h3>
+  //     <div class="card-foot">
+  //       <span class="card-dur">${p.duration}</span>
+  //     </div>
+  //   </article>
+  // `;
   return `
     <article class="performer-card" id="performer-${p.no}" data-no="${p.no}">
       <div class="card-head">
@@ -102,10 +114,6 @@ function createPerformerCardHTML(p) {
         <span class="card-type-tag">${p.type}</span>
       </div>
       <h3 class="card-name" id="name-heading-${p.no}">${p.name}</h3>
-      <div class="card-foot">
-        <span class="card-time">${p.time}</span>
-        <span class="card-dur">${p.duration}</span>
-      </div>
     </article>
   `;
 }
@@ -208,10 +216,6 @@ function filterPerformances() {
           <span class="ticket-type">${firstMatch.type}</span>
         </div>
         <div class="ticket-meta">
-          <div class="meta-block">
-            <span class="meta-lbl">ESTIMATED STAGE TIME</span>
-            <span class="meta-val time-gold">${firstMatch.time}</span>
-          </div>
           <div class="meta-block">
             <span class="meta-lbl">DURATION</span>
             <span class="meta-val">${firstMatch.duration}</span>
